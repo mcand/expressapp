@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test.js"
+    "test": "NODE_ENV=test mocha test.js"
   },
   "author": "Andre Furquim",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.14.2",
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "hiredis": "^0.4.1",
+    "redis": "^2.4.2"
   },
   "devDependencies": {
     "mocha": "^2.4.5",
